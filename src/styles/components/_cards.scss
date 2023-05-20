@@ -3,7 +3,7 @@
 .cards {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(38.5vw, 1fr));
   margin-top: 2rem;
 
   @include min-breakpoints(large) {
