@@ -1,0 +1,22 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem;
+  svg {
+    width: 60px;
+    fill: var(--accent-clr);
+    color: #bec3c8;
+    animation: spin 1250ms infinite linear;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

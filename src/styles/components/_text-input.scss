@@ -1,0 +1,42 @@
+@use "../abstracts/media-queries" as *;
+
+.text-input {
+  margin-top: 1.5rem;
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+    font-weight: 500;
+
+    button {
+      display: inline-block;
+      padding: 0.25rem;
+      font-size: 0.825rem;
+      color: black;
+      background-color: rgb(232, 232, 232);
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.825rem;
+    border: none;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    &:focus {
+      outline: 1px solid var(--accent-clr);
+    }
+
+    @include min-breakpoints(small) {
+      font-size: 1rem;
+    }
+  }
+
+  &:first-of-type {
+    @include min-breakpoints(small) {
+      margin-top: 4rem;
+    }
+  }
+}

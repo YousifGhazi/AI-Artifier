@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  margin-block: 1.5rem;
+  text-transform: capitalize;
+  color: var(--h-clr);
+}
+
+.text {
+  color: var(--text-clr);
+
+  @include min-breakpoints(small) {
+    max-width: 60ch;
+  }
+}

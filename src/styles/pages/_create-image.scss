@@ -1,0 +1,30 @@
+@use "../abstracts/media-queries" as *;
+
+.create-image {
+  .generated-image {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-block: 2rem;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.233);
+
+    .loader {
+      position: absolute;
+      top: 50%;
+      height: 100%;
+      margin-top: 0rem;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .generate-btn {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: var(--secondery-clr);
+  }
+  .share-btn {
+    margin: 2rem 0;
+    background-color: var(--accent-clr);
+  }
+}

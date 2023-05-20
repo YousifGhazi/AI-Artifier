@@ -1,0 +1,23 @@
+@use "../abstracts/media-queries" as *;
+
+.header {
+  background-color: var(--primary-clr);
+  @include min-breakpoints(medium) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 125px;
+    }
+    .nav-bar {
+      .create-image {
+        text-decoration: none;
+        background-color: var(--accent-clr);
+      }
+    }
+  }
+}
